@@ -26,16 +26,22 @@ public class BusMessageWriter
 
 Detailed answers would be a plus:
 
-What issue do asynchronous methods help to address?
+### Q: What issue do asynchronous methods help to address?
+A: Using of computing resources.
 
-What is the difference between asynchronous and parallel execution?
+### Q: What is the difference between asynchronous and parallel execution?
+A: Parallel - in same time. Asynchronous - state machine.
 
-Are there any nuances or issues arising from the use of ThreadPool, TPL and async/await that you can describe based on your experience?
+### Q: Are there any nuances or issues arising from the use of ThreadPool, TPL and async/await that you can describe based on your experience?
+A: AggregateException, deadblock (never had).
 
-Which approaches do you know to signal about an occurred event to another thread? Can you elaborate on their differences and specifics?
+### Q: Which approaches do you know to signal about an occurred event to another thread? Can you elaborate on their differences and specifics?
+AutoResetEvents, Monitor, SemaphoreSlim you mean?
 
-Can you describe your experience with applying common design and development principles and patterns? Which of them do you find most useful? Which tasks did you solve by following them and why did you choose them?
+### Q: Can you describe your experience with applying common design and development principles and patterns? Which of them do you find most useful? Which tasks did you solve by following them and why did you choose them?
+A: Builder, Observer, Chain of Responsibility, Visitor, Decorator, Proxy, Factory, Strategy, State, Mediator, Adapter, etc.
 
-Can you list the mechanisms used to implement Dependency Injection and compare them in detail, with some examples from your own experience?
+### Q: Can you list the mechanisms used to implement Dependency Injection and compare them in detail, with some examples from your own experience?
+A: Reflection, Generics, Life time (transient, scope, singleton)
 
 
